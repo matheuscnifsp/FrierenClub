@@ -6,16 +6,47 @@
     font-size: 16px;
 }
 
+html, body {
+    height: 100%;    
+}
+
 body {
-    background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(to bottom, rgb(60,60,60), rgb(20,20,20));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
     padding: 10px;
     margin: 10px;
-    background-color: whitesmoke;
+    background-color: goldenrod;
     border-radius: 25px;
     text-align: center;
+    width: 100%;
+}
+
+header section {
+    margin: 0;
+    padding: 0;
+    border: 1px solid goldenrod;
+    border-radius: 15px;
+    background-image: 
+    linear-gradient(rgba(65, 65, 65, 0.4), rgba(65, 65, 65, 0.4)),
+    url('../medias/images/background1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+header section hr {
+    margin-inline-start: 5%;
+}
+
+header section p, h1{
+    color: rgb(206, 231, 253);
 }
 
 header h1{
@@ -24,13 +55,282 @@ header h1{
 
 header article{
     padding: 15px;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+header section nav{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-inline: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.menu{
+    border: 0 solid black;
+    border-radius: 15px;
+    background-color: goldenrod;
+    box-sizing: content-box;
+}
+
+.menu a, a:hover, a:link, a:visited, a:active{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-item{
+    font-size: 16px;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown-item:hover .dropdown-content{
+    display: flex;
+    justify-content: center;
+}
+
+.linkArticles{
+    background-color: rgb(221, 171, 43);
+    margin-bottom: 15px;
+    margin-top: 0;
+    margin-inline: 15px;
+    padding: 5px;
+    width: 30%;
+}
+
+main {
+    flex-grow: 1;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    background-color: goldenrod;
+}
+
+.characters{
+    background-image: linear-gradient(to left, rgb(20, 20, 20), rgb(00,00,00));
+    display: flex;
+    flex-direction: row;
+    border: 5px rgb(0, 0, 0) solid;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.choices{
+    flex-grow: 1;
+    margin: 0;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 100%;
+    left: 0;
+    align-items: center;
+}
+
+.choices-box{
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices-box a, .choices-box a:hover, .choices-box a:link, .choices-box a:active, .choices-box a:visited{
+    text-align: center;
+    color: azure;
+    text-decoration: none;
+}
+
+.Frieren{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: 
+    linear-gradient(rgba(65, 65, 65, 0.4), rgba(65, 65, 65, 0.4)),
+    url('../medias/images/frierenIcon.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 5px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Himmel{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: 
+    linear-gradient(rgba(65, 65, 65, 0.4), rgba(65, 65, 65, 0.4)),
+    url('../medias/images/himmelIcon.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 5px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Eizen{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: 
+    linear-gradient(rgba(65, 65, 65, 0.4), rgba(65, 65, 65, 0.4)),
+    url('../medias/images/eizenIcon.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 5px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Heiter{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: 
+    linear-gradient(rgba(65, 65, 65, 0.4), rgba(65, 65, 65, 0.4)),
+    url('../medias/images/heiterIcon.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 5px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Fern{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: 
+    linear-gradient(rgba(65, 65, 65, 0.4), rgba(65, 65, 65, 0.4)),
+    url('../medias/images/fernIcon.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 5px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Stark{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: 
+    linear-gradient(rgba(65, 65, 65, 0.4), rgba(65, 65, 65, 0.4)),
+    url('../medias/images/starkIcon.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 5px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.description{
+    flex-grow: 1;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    width: 65%;
+    height: 100%;
+}
+
+.descriptionText{
+    flex-grow: 1;
+    background-image: linear-gradient(rgba(65, 65, 65, 0.4), rgba(65, 65, 65, 0.4));
+    text-align: center;
+    right: 0;
+}
+
+.descriptionText p, h1{
+    color: rgb(206, 231, 253);
+}
+
+footer {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer a{
+    color: black;
+}
+
+footer a:active{
+    color: black;
+}
+
+footer a:visited{
+    color: black;
+}
+
+footer a:link{
+    color: black;
+}
+
+footer a:hover{
+    color: black;
+}
+
+footer section{
+    display: inline-flex;
+}
+
+footer article{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+article{
+    padding: 10px;
+    border-radius: 15px;
 }
 
 @media screen and (min-width:992px) {
-    
+    *{
+        
+    }
 }
 
 @media screen and (max-width:767px) {
-    
+    *{
+        font-size: 10px;
+    }
 }
